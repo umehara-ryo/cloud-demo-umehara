@@ -7,7 +7,7 @@ spring:
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
   application:
-    name: userserver #orderのサービス名
+    name: orderserver #orderのサービス名
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
