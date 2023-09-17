@@ -7,7 +7,10 @@ spring:
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
   application:
-    name: userserver #userのサービス名
+    name: userserver #userのサービス名 #nacosサービスアドレス
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -18,7 +21,7 @@ logging:
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
 
-eureka:
-  client:
-    service-url: # eurekaのアドレス情報
-      defaultZone: http://127.0.0.1:10086/eureka
+#eureka:
+#  client:
+#    service-url: # eurekaのアドレス情報
+#      defaultZone: http://127.0.0.1:10086/eureka

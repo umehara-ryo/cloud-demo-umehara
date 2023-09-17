@@ -1,5 +1,6 @@
 package cn.itcast.order;
 
+
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,4 +24,10 @@ public class OrderApplication {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
+
+    //グローバル配置
+   /* @Bean
+    public IRule randomRule(){
+        return new RandomRule();
+    }*/
 }
