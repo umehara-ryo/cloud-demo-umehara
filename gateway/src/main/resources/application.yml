@@ -1,0 +1,18 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: user-service #ルート標識、唯一
+          uri: lb://userservice #ルートのターゲットアドレス
+          predicates: #条件式
+            - Path=/user/** #パス条件式 -
+        - id: order-service #ルート標識、唯一
+          uri: lb://orderservice #ルートのターゲットアドレス
+          predicates: #条件式
+            - Path=/order/** #パス条件式
