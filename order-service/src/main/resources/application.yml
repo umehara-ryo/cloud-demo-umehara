@@ -7,13 +7,15 @@ spring:
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
   application:
-    name: orderserver #orderのサービス名
+    name: orderservice #userのサービス名 #nacosサービスアドレス
   cloud:
     nacos:
-      server-addr: localhost:8848 #nacosサービスアドレス
+      server-addr: localhost:8848
+      discovery:
+        cluster-name: Yokohama #横浜　
 
 mybatis:
-  type-aliases-package: cn.itcast.user.pojo
+  type-aliases-package: cn.itcast.order.pojo
   configuration:
     map-underscore-to-camel-case: true
 logging:
