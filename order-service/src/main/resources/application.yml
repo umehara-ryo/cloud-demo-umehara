@@ -14,6 +14,7 @@ spring:
       discovery:
         cluster-name: Yokohama #横浜　
         namespace: 6aa37189-3485-4030-96fe-6f8acaa3e64f #ネームスペース　
+        ephemeral: false #非臨時サービスに設定
 
 mybatis:
   type-aliases-package: cn.itcast.order.pojo
