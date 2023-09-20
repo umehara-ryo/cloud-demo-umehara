@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="cloud_order@localhost" uuid="1c787f67-1691-427d-9a11-5da2f49848ec">
+    <data-source source="LOCAL" name="cloud_order@localhost [2]" uuid="6ed43a60-3aeb-4d20-98f5-577b52f97f64">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
