@@ -36,13 +36,17 @@ ribbon:
     enabled: true # 前読みをオンにする
     clients: userservice # サービス指名
 
-#feign:
-#  client:
-#    config:
-#      default:
-#        loggerLevel: FULL
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: BASIC
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
 
-  #    eureka:
+    #    eureka:
     #  client:
     #    service-url: # eurekaのアドレス情報
     #      defaultZone: http://127.0.0.1:10086/eureka
