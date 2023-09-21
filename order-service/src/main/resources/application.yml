@@ -36,8 +36,13 @@ ribbon:
     enabled: true # 前読みをオンにする
     clients: userservice # サービス指名
 
+#feign:
+#  client:
+#    config:
+#      default:
+#        loggerLevel: FULL
 
-#    eureka:
+  #    eureka:
     #  client:
     #    service-url: # eurekaのアドレス情報
     #      defaultZone: http://127.0.0.1:10086/eureka
